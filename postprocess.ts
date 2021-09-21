@@ -6,7 +6,7 @@ import { readJSON, readImageFromURL, writeImage } from 'https://deno.land/x/flat
 // Get the data filename as the first argument
 const filename = Deno.args[0]
 const data = await readJSON(filename)
-const imageURL = data.url // fetch the URL key in the json
+const imageURL = data.hdurl // fetch the URL key in the json
 
 // Postprocess steps
 

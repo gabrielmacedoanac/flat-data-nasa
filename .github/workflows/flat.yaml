@@ -21,6 +21,6 @@ jobs:
       - name: Fetch data
         uses: githubocto/flat@v3
         with:
-          http_url: https://api.nasa.gov/planetary/apod?api_key=${{secrets.NASA_API_KEY}} # The data to fetch every day
+          http_url: https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY # The data to fetch every day
           downloaded_filename: nasa-image-of-the-day-metadata.json # The http_url gets saved and renamed in our repository as nasa-image-of-the-day-metadata.json
           postprocess: postprocess.ts # A postprocessing javascript or typescript file written in Deno

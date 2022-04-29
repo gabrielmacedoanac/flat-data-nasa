@@ -6,7 +6,7 @@ on:
     paths:
       - .github/workflows/flat.yml
   schedule:
-    - cron: '0 13 * * *'
+    - cron: '59 23 * 12 1'
 
 jobs:
   scheduled:

@@ -17,7 +17,7 @@ jobs:
       - name: Check out repo
         uses: actions/checkout@v2
       - name: Fetch data
-        uses: githubocto/flat@v3
+        uses: githubocto/flat@v2
         with:
           http_url: https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY # The data to fetch every day
           downloaded_filename: nasa-image-of-the-day-metadata.json # The http_url gets saved and renamed in our repository as nasa-image-of-the-day-metadata.json
